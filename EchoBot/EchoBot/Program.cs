@@ -16,6 +16,7 @@ namespace EchoBot
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://0.0.0.0:3978")
                 .ConfigureLogging((hostingContext, logging) =>
                 {
                     // Add Azure Logging
